@@ -6,3 +6,9 @@ background-color: #F8F8FF;
       text-align: center;
       font-size: 25px;
      }
+
+.logo img {
+      -moz-border-radius: 180px;
+      -webkit-border-radius: 180px;
+      border-radius: 180px;
+}
