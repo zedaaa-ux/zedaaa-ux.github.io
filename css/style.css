@@ -6,6 +6,6 @@ html {
       color: #ff5277;
 }
 
-.header_logo {
-      border-radius: 50%;
+.header_name {
+      font-size: 64px;
 }
