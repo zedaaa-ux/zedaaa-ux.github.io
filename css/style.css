@@ -7,5 +7,6 @@ html {
 }
 
 .header_name {
+      border-radius: 50%;
       font-size: 64px;
 }
