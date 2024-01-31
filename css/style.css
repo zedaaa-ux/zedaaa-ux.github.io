@@ -1,9 +1,9 @@
-html {
-      background-color: #2e3138;
+body {
+      background-color: #0e141b;
 }
 
 .header {
-      color: white;
+      color: #ffffff;
       padding: 3.125rem 0;
       flex: none;
 }
