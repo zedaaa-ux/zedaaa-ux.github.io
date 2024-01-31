@@ -16,3 +16,7 @@ html {
       vertical-align: middle;
       font-size: 48px;
 }
+
+a {
+      text-decoration: none;
+}
