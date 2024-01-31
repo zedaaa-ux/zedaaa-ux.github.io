@@ -1,9 +1,13 @@
+$color--bg: #0e141b;
+$color--txt: #ffffff;
+
+
 body {
-      background-color: #0e141b;
+      color: $color--bg;
 }
 
 .header {
-      color: #ffffff;
+      color: $color--txt;
       padding: 3.125rem 0;
       flex: none;
 }
