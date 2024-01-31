@@ -3,7 +3,9 @@ html {
 }
 
 .header {
-      color: white#;
+      color: white;
+      padding: 3.125rem 0;
+      flex: none;
 }
 
 .header_logo {
