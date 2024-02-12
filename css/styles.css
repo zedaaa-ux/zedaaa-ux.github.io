@@ -4,6 +4,10 @@ body {
       margin: 0;
       padding: 0;
       height: 100%;
+      font-family: 'Helvetica', sans-serif;
+
+
+ 
 }
 
 .header {
@@ -22,7 +26,7 @@ body {
 
 .header_name {
       vertical-align: middle;
-      font-size: 48px;
+      font-size: 30px;
       margin: 10px;
 }
 
@@ -38,6 +42,7 @@ nav {
       position: relative;
       z-index: 1;
       font-size: 30px;
+      flex-grow: 1;
 
     }
     
@@ -62,3 +67,85 @@ nav {
     nav ul li a:hover {
       background-color: #555;
     }
+
+.boh{
+      padding-top: 12px;;
+      position: flex;
+      text-align: center;
+}
+
+.container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    h1.animate-text {
+      overflow: hidden;
+      white-space: nowrap;
+      animation: revealText 10s steps(100, end) forwards;
+    }
+    
+    @keyframes revealText {
+      0% {
+        width: 0;
+        color: #0e141b;
+      }
+      50%{
+            color: #ffffff;
+      }
+      100% {
+        width: 100%;
+
+      }
+    }
+    
+    .animation-visible {
+      opacity: 1;
+    }
+    
+
+
+
+    
+    .content, .section {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+    }
+    
+    /* Stile aggiuntivo */
+    h1 {
+      font-size: 2em;
+      color: #fff;
+    }
+
+
+    .scroll-container {
+      overflow-y: scroll;
+      scroll-behavior: smooth;
+      position: relative; /* Posizione relativa per gli elementi assoluti */
+    }
+
+/* Nessuna modifica ai tuoi stili CSS esistenti */
+
+/* Stili extra per il "scroll down" */
+.scroll-down {
+      font-size: 1.2em;
+      color: #555;
+      cursor: pointer;
+      animation: bounce 2s infinite alternate;
+    }
+    
+    @keyframes bounce {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(10px);
+      }
+    }
+    
