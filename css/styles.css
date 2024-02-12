@@ -1,11 +1,16 @@
 body {
       background-color: #0e141b;
       color: #ffffff;
+      margin: 0;
+      padding: 0;
+      height: 100%;
 }
 
 .header {
-      padding: 3.125rem 0;
-      flex: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
 }
 
 .header_logo {
@@ -14,7 +19,6 @@ body {
 }
 
 .header_name {
-      display: inline-block;
       vertical-align: middle;
       font-size: 48px;
 }
@@ -27,7 +31,7 @@ a {
 
 /* NAVBAR */
 nav {
-      background-color: #333;
+      background-color: #0e141b;
 
     }
     
