@@ -149,13 +149,7 @@ nav {
       }
     }
     
-.social{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  vertical-align: middle;
-}
-
-.ig{
-  vertical-align: middle;
+.copyright{
+  font-size: smaller;
+  padding: 10px; 
 }
