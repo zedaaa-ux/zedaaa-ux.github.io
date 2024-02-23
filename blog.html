@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        .comment {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Blog Title</h1>
+    <p>Blog content goes here...</p>
+    <h2>Comments</h2>
+    <div id="comments">
+        <!-- Comments will be added here -->
+    </div>
+    <h2>Add a Comment</h2>
+    <textarea id="commentText" rows="4" cols="50"></textarea><br>
+    <button onclick="addComment()">Add Comment</button>
+
+    <script>
+        function addComment() {
+            var commentText = document.getElementById("commentText").value;
+            var comment = document.createElement("div");
+            comment.className = "comment";
+            comment.innerHTML = commentText;
+            document.getElementById("comments").appendChild(comment);
+            
+            // Store comments in localStorage
+            var comments = localStorage.getItem("comments");
+            if (!comments) {
+                comments = [];
+            } else {
+                comments = JSON.parse(comments);
+            }
+            comments.push(commentText);
+            localStorage.setItem("comments", JSON.stringify(comments));
+        }
+
+        // Load comments from localStorage on page load
+        window.onload = function() {
+            var comments = localStorage.getItem("comments");
+            if (comments) {
+                comments = JSON.parse(comments);
+                for (var i = 0; i < comments.length; i++) {
+                    var comment = document.createElement("div");
+                    comment.className = "comment";
+                    comment.innerHTML = comments[i];
+                    document.getElementById("comments").appendChild(comment);
+                }
+            }
+        }
+    </script>
+</body>
+</html>
