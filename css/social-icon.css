@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+      display: inline-flex;
+      list-style: none;
+    }
+    
+    .wrapper .icon {
+      position: relative;
+      background: #0e141b;
+      border-radius:15px;
+      padding: 15px;
+      margin: 10px;
+      width: 50px;
+      height: 50px;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    
+    
+    
+    .wrapper .instagram {
+      background: #0e141b;
+      color: #ffffff;
+    }
+    
+    .wrapper .github {
+      background: #0e141b;
+      color: #ffffff;
+    }
+    
+    

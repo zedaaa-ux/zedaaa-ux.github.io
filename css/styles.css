@@ -68,7 +68,7 @@ nav {
       background-color: #555;
     }
 
-.boh{
+.bio{
       padding-top: 12px;;
       position: flex;
       text-align: center;
@@ -149,3 +149,13 @@ nav {
       }
     }
     
+.social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.ig{
+  vertical-align: middle;
+}
